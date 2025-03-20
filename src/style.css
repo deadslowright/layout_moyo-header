@@ -1,7 +1,11 @@
-html {
+.page {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+
+:root {
+  --blue-color: #00acdc;
 }
 
 body {
@@ -39,6 +43,7 @@ header {
   line-height: 60px;
   color: #000;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav__list {
@@ -62,12 +67,12 @@ header {
 }
 
 .nav__link:hover {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav__link.is-active {
   position: relative;
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav__link.is-active::after {
@@ -77,6 +82,6 @@ header {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #00acdc;
+  background-color: var(--blue-color);
   border-radius: 8px;
 }
